@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+
+/* Estilo do body */
+body {
+    background-image: url(imagens/fundo\ coração\ 2.jpeg);
+    background-size: 400px auto; /* Ajusta o fundo para cobrir a tela inteira */
+    background-position: center; /* Centraliza o fundo */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0;
+    font-family: Arial, sans-serif; /* Família de fontes mais comum */
+}
+
+/* Evita zoom em dispositivos móveis */
+meta[name="viewport"] {
+    content: width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;
+}
+
+/* Estilo do título principal */
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 5em;
+    font-family: "Loved by the King", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin: 0 0 20px 0; /* Espaçamento abaixo */
+}
+
+/* Estilo do parágrafo */
+p {
+    color: red;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Loved by the King", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 80%;  /* Largura maior para dispositivos móveis */
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o parágrafo */
+    padding: 10px;
+}
+
+/* Estilo do contador */
+.contador {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Maior largura em dispositivos móveis */
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Estilo da grid do contador de tempo */
+.contador-tempo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas no layout desktop */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Estilo dos itens dentro do contador de tempo */
+.tempo-item {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 2, 2, 0.479);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do label */
+.label {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo dos números no contador */
+.numero {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título secundário */
+h2 {
+    color: red;
+    font-size: 3em;
+    font-family: "Loved by the King", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste no parágrafo */
+    p {
+        font-size: 2em; /* Reduz o tamanho da fonte */
+        width: 90%; /* Largura mais flexível */
+    }
+
+    /* Ajuste da grid do contador de tempo para 2 colunas */
+    .contador-tempo {
+        grid-template-columns: 1fr 1fr; /* Duas colunas */
+    }
+
+    /* Ajuste no tamanho dos números no contador */
+    .numero {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem; /* Fonte menor */
+    }
+
+    /* Ajuste do título secundário */
+    h2 {
+        font-size: 2.5em; /* Reduz o tamanho da fonte */
+    }
+
+    /* Ajuste da largura do contador */
+    .contador {
+        padding: 20px; /* Menos padding */
+    }
+
+    /* Ajuste do título principal */
+    h1 {
+        font-size: 3em; /* Tamanho menor em telas pequenas */
+    }
+}
+
+
+
+    
+    
