@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco+Guides&display=swap');
+
+@font-face { font-family: lapis; src: url(fonts/lapis.ttf); }
+
+body {
+    background-image: url(imagens/kuromi\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Cobrir a página toda */
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 5em;
+    font-family: "Playwrite ES Deco Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+p {
+    color: red;
+    text-align: justify;
+    font-size: 3em;
+    font-family: "Playwrite ES Deco Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 10px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    width: 90%; /* Adapta o tamanho em telas menores */
+    max-width: 800px; /* Limita o tamanho em telas grandes */
+}
+
+.contador {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contador-tempo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tempo-item {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 2, 2, 0.479);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.numero {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Playwrite ES Deco Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.lista {
+    color: silver;
+    font-family: 'lapis', cursive;
+    font-size: 3em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+}
+
+#love {
+    color: silver;
+    font-family: 'lapis', cursive;
+}
+
+.pg2 {
+    color: silver;
+    font-family: 'lapis', cursive;
+    text-align: justify;
+}
+
+.three {
+    color: silver;
+    font-family: 'lapis', cursive;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-box h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.popup-box button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #55a0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.popup-box button:hover {
+    background: #3b82cc;
+}
+
+#sim {
+    color: silver;
+    font-family: 'lapis', cursive;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.5em;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .numero {
+        font-size: 1.5rem;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
